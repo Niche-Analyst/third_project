@@ -1,0 +1,289 @@
+code,kor_label,eng_label,설명/비고
+DRAMA_GEN,드라마(전체),Drama (General),모든 장르의 드라마/시리즈 통합
+DRAMA_ROM_GEN,로맨스,Romance,사랑·연애 중심 서사
+DRAMA_ROM_OFFICE,오피스 로맨스,Office Romance,직장·사무실 내 연애
+DRAMA_ROM_CAMPUS,캠퍼스 로맨스,Campus Romance,대학·고교 캠퍼스 연애
+DRAMA_ROM_NOONA,연상연하 로맨스,Older Woman Romance,연상녀·연하남 등 연상연하 커플
+DRAMA_ROM_SECONDCHANCE,재회 로맨스,Second Chance Romance,이별 후 재회·이혼 후 재결합
+DRAMA_ROM_TRIANGLE,삼각관계,Love Triangle,삼각/다각관계 연애
+DRAMA_ROM_LONGDIST,장거리 연애,Long-Distance Romance,거리 극복 로맨스
+DRAMA_ROM_MARRIED,기혼자 로맨스,Married Romance,기혼/불륜/금기 사랑
+DRAMA_ROM_FIRSTLOVE,첫사랑,First Love,첫사랑 테마 성장
+DRAMA_ROM_FORBIDDEN,금지된 사랑,Forbidden Love,신분차·나이차·사회적 금기
+DRAMA_ROM_BL,BL(보이즈러브),Boys’ Love,남성 동성 로맨스
+DRAMA_ROM_GL,GL(걸즈러브),Girls’ Love,여성 동성 로맨스
+DRAMA_ROM_YOUNGADULT,청춘 로맨스,Youth Romance,20대 청춘 사랑
+DRAMA_ROM_MELODRAMA,멜로,Melodrama,감성·애절 중심
+DRAMA_ROM_HISTORICAL,사극 로맨스,Historical Romance,전통/역사 배경 연애
+DRAMA_FAM_GEN,가족극,Family Drama,가족관계·가정사 중심
+DRAMA_FAM_MULTIGENER,세대갈등 가족극,Multi-Generational Family Drama,다세대 갈등
+DRAMA_FAM_SINGLEPARENT,싱글맘/대디,Single Parent Family,한부모 가족 이야기
+DRAMA_FAM_ADOPTION,입양 가족,Adoption Family,입양/위탁가정
+DRAMA_FAM_MARRIAGE,결혼/이혼,Marriage/Divorce,결혼생활·이혼 등
+DRAMA_FAM_SIBLING,형제자매,Sibling Drama,형제·자매 이야기
+DRAMA_FAM_STEPFAMILY,재혼가족,Step Family,재혼·합가·이복가족
+DRAMA_FAM_ELDERLY,노부모/노인,Senior Family Drama,노인·노부모 케어
+DRAMA_FAM_CHILDDRA,자녀 성장,Child Growth Drama,자녀 양육/성장
+DRAMA_SOC_GEN,사회문제,Social Issue,사회/시대상·제도
+DRAMA_SOC_FEMINISM,페미니즘,Feminism,여성서사·여성문제
+DRAMA_SOC_CLASS,계급/빈부,Class/Wealth,부자·서민·계급차
+DRAMA_SOC_RACE,인종/다문화,Race/Multicultural,인종차별·이주·다문화
+DRAMA_SOC_DISABILITY,장애/질병,Disability/Illness,장애·난치병·극복
+DRAMA_SOC_ENVIRONMENT,환경문제,Environment,기후변화·환경
+DRAMA_SOC_POLITICS,정치,Political,정치/권력/비리
+DRAMA_SOC_CORRUPTION,비리/부패,Corruption,기업/정부 부패
+DRAMA_THR_GEN,스릴러,Thriller,긴장/반전·서스펜스
+DRAMA_THR_PSYCHO,심리 스릴러,Psychological Thriller,정신/광기/두뇌싸움
+DRAMA_THR_POLICE,경찰 스릴러,Police Thriller,경찰/형사 주인공
+DRAMA_THR_LEGAL,법정 스릴러,Legal Thriller,재판·법조
+DRAMA_THR_POLITICS,정치 스릴러,Political Thriller,정치·권력
+DRAMA_THR_TECH,테크/AI 스릴러,Tech/AI Thriller,첨단기술/해킹/AI
+DRAMA_THR_MEDICAL,메디컬 스릴러,Medical Thriller,의료사고/의료음모
+DRAMA_THR_CRIME,범죄 스릴러,Crime Thriller,범죄·조직·도둑
+DRAMA_THR_SUPERNATURAL,초자연 스릴러,Supernatural Thriller,귀신/초능력/이변
+DRAMA_THR_SURVIVAL,생존/서바이벌,Survival Thriller,재난/생존/탈출
+DRAMA_THR_HUNT,추격전,Manhunt,도망자/추격자 소재
+DRAMA_CRIME_GEN,범죄극,Crime Drama,수사/추리/범죄조직
+DRAMA_CRIME_SERIAL,연쇄살인,Serial Killer,연쇄살인마 수사
+DRAMA_CRIME_DETECTIVE,탐정/사설탐정,Detective,탐정·사설수사관
+DRAMA_CRIME_POLICE,경찰,Police,경찰물·형사·팀
+DRAMA_CRIME_LAWYER,변호사,Lawyer,법정·변호사 주인공
+DRAMA_CRIME_ORGANIZED,조직범죄,Organized Crime,조폭/마피아/갱단
+DRAMA_CRIME_FRAUD,사기/금융,Scam/Fraud,보이스피싱·금융범죄
+DRAMA_CRIME_HEIST,강도/도둑,Heist,도둑단·강탈극
+DRAMA_CRIME_CORRUPTION,부패/비리,Corruption,부정부패·로비
+DRAMA_CRIME_HOSTAGE,인질극,Hostage,인질/협상/극한상황
+DRAMA_CRIME_CYBER,사이버범죄,Cyber Crime,해킹/피싱/인터넷
+DRAMA_MYST_GEN,미스터리,Mystery,미해결/추리/비밀
+DRAMA_MYST_CLOSEDROOM,밀실추리,Closed Room Mystery,밀실살인·한정된 공간
+DRAMA_MYST_AMNESIA,기억상실,Amnesia Mystery,기억상실/정체성 추적
+DRAMA_MYST_HISTORICAL,역사 미스터리,Historical Mystery,과거사·미해결사건
+DRAMA_MYST_CONSPIRACY,음모론,Conspiracy,국가/단체 음모
+DRAMA_MYST_SUPERNATURAL,초자연 미스터리,Supernatural Mystery,초능력/이변/귀신
+DRAMA_MYST_CRIME,범죄 미스터리,Crime Mystery,수수께끼 범죄·용의자
+DRAMA_MYST_DUALTIMELINE,이중타임라인,Dual Timeline,과거/현재 교차
+DRAMA_ACTION_GEN,액션,Action,격투·추격·폭력
+DRAMA_ACTION_CAR,카체이싱,Car Chase,자동차 추격/경주
+DRAMA_ACTION_HEIST,도둑/강도,Heist Action,강도단/범죄액션
+DRAMA_ACTION_SPY,첩보/스파이,Spy Action,비밀요원/첩보전
+DRAMA_ACTION_MILITARY,군사/전쟁,Military Action,특수부대/군인
+DRAMA_ACTION_MARTIALARTS,무술,Martial Arts,무술/격투기
+DRAMA_ACTION_BODYGUARD,경호/보디가드,Bodyguard Action,경호원/보안
+DRAMA_ACTION_VIGILANTE,자경단,Hero/Vigilante,의적/자경단/배트맨
+DRAMA_ACTION_ASSASSIN,암살자,Assassin Action,킬러/암살/청부
+DRAMA_ACTION_TECH,테크/해킹 액션,Tech/Hacker Action,해킹/첨단기술
+DRAMA_ACTION_FANTASY,판타지 액션,Fantasy Action,마법·이능력 액션
+DRAMA_ACTION_ZOMBIE,좀비 액션,Zombie Action,좀비·아포칼립스
+DRAMA_SF_GEN,공상과학,Sci-Fi,미래·과학·우주
+DRAMA_SF_DYSTOPIA,디스토피아,Dystopia,암울한 미래세계
+DRAMA_SF_AI,AI/로봇,AI/Robot,인공지능·로봇
+DRAMA_SF_TIME,타임슬립,Time Travel,시간여행·타임루프
+DRAMA_SF_ALIEN,외계인,Alien,외계인·우주전쟁
+DRAMA_SF_CYBERPUNK,사이버펑크,Cyberpunk,미래도시·네온·해커
+DRAMA_SF_SUPERHUMAN,슈퍼휴먼,Superhuman,초능력자·변이
+DRAMA_SF_PARALLEL,평행우주,Parallel Universe,다중세계관
+DRAMA_FANTASY_GEN,판타지,Fantasy,초자연·마법·이세계
+DRAMA_FANTASY_MAGIC,마법,Magic Fantasy,마법사·마도사
+DRAMA_FANTASY_REINCARNATION,환생/빙의,Reincarnation,환생·빙의·전생
+DRAMA_FANTASY_DRAGON,용·괴수,Dragons/Monsters,용·괴물 소재
+DRAMA_FANTASY_FOLKLORE,전설/신화,Folklore,전설·신화·설화
+DRAMA_FANTASY_HISTORICAL,사극 판타지,Historical Fantasy,역사+판타지 결합
+DRAMA_FANTASY_VAMPIRE,뱀파이어,Vampire,흡혈귀 소재
+DRAMA_FANTASY_WEREWOLF,늑대인간,Werewolf,늑대인간 소재
+DRAMA_FANTASY_GRIMREAPER,저승사자,Grim Reaper,사후세계·저승사자
+DRAMA_FANTASY_TIME,시간마법,Time Magic,시간조작·정지·회귀
+DRAMA_HORROR_GEN,호러,Horror,공포·괴담·섬뜩함
+DRAMA_HORROR_GHOST,귀신/심령,Ghost/Supernatural,귀신·빙의·심령
+DRAMA_HORROR_ZOMBIE,좀비,Zombie,좀비/감염
+DRAMA_HORROR_SLASHER,슬래셔,Slasher,잔혹/살인마
+DRAMA_HORROR_BODYHORROR,바디호러,Body Horror,신체변형/괴이
+DRAMA_HORROR_MONSTER,괴수/괴물,Monster Horror,괴물·이형생물
+DRAMA_HORROR_OCCULT,오컬트,Occult,악마·종교·주술
+DRAMA_HORROR_GORE,고어,Gore,피·잔혹
+DRAMA_HORROR_PSYCHO,정신공포,Psychological Horror,광기·정신병·불안
+DRAMA_MEDICAL_GEN,메디컬,Medical,병원·의사·간호사
+DRAMA_MEDICAL_EMERGENCY,응급실,Emergency,응급실·구급차
+DRAMA_MEDICAL_SURGERY,외과,Surgeon,수술·외과의사
+DRAMA_MEDICAL_PSY,정신과,Medical Psychology,정신과/상담
+DRAMA_MEDICAL_LAW,의료소송,Medical Law,의료과실·법정
+DRAMA_MEDICAL_VETERINARY,수의사,Veterinary,동물병원/수의사
+DRAMA_SCHOOL_GEN,학원물,School Drama,학교·학원 소재
+DRAMA_SCHOOL_CAMPUS,캠퍼스,Campus,대학교/캠퍼스 생활
+DRAMA_SCHOOL_HIGH,고등학교,High School,고교/수험·청소년
+DRAMA_SCHOOL_MIDDLE,중학교,Middle School,중등 교육
+DRAMA_SCHOOL_TEACHER,교사,Teacher Drama,선생님 주인공
+DRAMA_SCHOOL_BULLYING,학교폭력,Bullying,왕따·따돌림
+DRAMA_SCHOOL_SUPERNATURAL,학원초자연,School Supernatural,학교+초자연 현상
+DRAMA_SCHOOL_SPECIAL,특수목적,Special School,과학고·체육고·예술고 등
+DRAMA_SCHOOL_BOARDING,기숙학교,Boarding School,기숙사+학원
+DRAMA_WORK_GEN,직장물,Workplace,직장·회사·사무실
+DRAMA_WORK_OFFICE,오피스,Office,사무직/직장인
+DRAMA_WORK_STARTUP,스타트업,Startup,창업·벤처
+DRAMA_WORK_LAWFIRM,로펌,Law Firm,법률사무소/변호사
+DRAMA_WORK_POLITICS,정치,Politics,정치권·공직사회
+DRAMA_WORK_MEDIA,언론/방송,Media,언론인·기자·방송국
+DRAMA_WORK_FOOD,음식/외식,F&B,요리사·레스토랑·외식업
+DRAMA_WORK_HOSPITALITY,호텔·서비스,Hospitality,호텔·리조트
+DRAMA_WORK_POLICE,경찰,Police,경찰/형사/수사
+DRAMA_WORK_MEDICAL,의료,Medical,의사·간호사
+DRAMA_WORK_EDUCATION,교육,Education,교사·강사
+DRAMA_WORK_ENGINEERING,엔지니어,Engineering,기술자·공학자
+DRAMA_WORK_IT,IT/테크,IT,프로그래머/스타트업
+DRAMA_WORK_MILITARY,군대,Military,군인/장교/부대
+DRAMA_WORK_ART,예술,Art,화가·디자이너·음악가
+DRAMA_WORK_LAWENFORCEMENT,공무원,Law Enforcement,관공서·공무원
+DRAMA_WORK_CONSTRUCTION,건설,Construction,건설현장/노동자
+DRAMA_WORK_TRANSPORT,운송/운전,Transport,택시·트럭·항공·철도
+DRAMA_WORK_BUSINESS,사업가,Entrepreneur,CEO/사업가/투자자
+DRAMA_WORK_FASHION,패션,Fashion,디자이너/모델
+DRAMA_WORK_MARKETING,마케팅,Marketing,광고/홍보/마케팅
+DRAMA_WORK_FINANCE,금융,Finance,은행원/투자/재무
+DRAMA_WORK_SERVICE,서비스,Service,소매업/CS/고객응대
+MOVIE_GEN,영화(전체),Movie (General),모든 장르의 영화 통합
+MOVIE_ACTION_GEN,액션,Action,액션영화 전반
+MOVIE_ACTION_MARTIALARTS,무술액션,Martial Arts Action,무술/격투기 중심
+MOVIE_ACTION_CAR,카체이싱,Car Chase,자동차 추격전
+MOVIE_ACTION_SPY,첩보액션,Spy Action,스파이/첩보
+MOVIE_ACTION_HEIST,강도/도둑,Heist,범죄강탈/도둑
+MOVIE_ACTION_SUPERHERO,슈퍼히어로,Superhero,초능력/코믹스 원작
+MOVIE_ACTION_HISTORICAL,역사액션,Historical Action,사극+액션
+MOVIE_ACTION_WAR,전쟁,War Movie,전쟁·군사 배경
+MOVIE_ACTION_POLICE,경찰액션,Police Action,형사/수사/경찰물
+MOVIE_SF_GEN,공상과학,Sci-Fi,미래·우주·기술
+MOVIE_SF_DYSTOPIA,디스토피아,Dystopia,암울한 미래
+MOVIE_SF_AI,AI/로봇,AI/Robot,로봇/인공지능
+MOVIE_SF_TIME,타임슬립,Time Travel,시간여행
+MOVIE_SF_PARALLEL,평행우주,Parallel Universe,다중세계
+MOVIE_SF_ALIEN,외계인,Alien,외계생명체
+MOVIE_SF_CYBERPUNK,사이버펑크,Cyberpunk,미래도시
+MOVIE_FANTASY_GEN,판타지,Fantasy,마법·초자연
+MOVIE_FANTASY_MAGIC,마법,Magic,마법사/마도사
+MOVIE_FANTASY_MYTH,신화·전설,Myth,전설/설화
+MOVIE_FANTASY_DRAGON,용·괴물,Dragon,용/괴수
+MOVIE_FANTASY_VAMPIRE,뱀파이어,Vampire,흡혈귀
+MOVIE_FANTASY_WEREWOLF,늑대인간,Werewolf,늑대인간
+MOVIE_FANTASY_GRIMREAPER,저승사자,Grim Reaper,사후세계
+MOVIE_FANTASY_FOLKLORE,민담/전래,Folklore,민담/설화
+MOVIE_ROM_GEN,로맨스,Romance,사랑·연애 영화
+MOVIE_ROM_HISTORICAL,역사로맨스,Historical Romance,시대극 로맨스
+MOVIE_ROM_NOONA,연상연하,Older Woman Romance,연상연하 커플
+MOVIE_ROM_FORBIDDEN,금지된 사랑,Forbidden Love,금기된 연애
+MOVIE_ROM_TRIANGLE,삼각관계,Love Triangle,삼각관계
+MOVIE_ROM_BL,BL(보이즈러브),Boys’ Love,남성 동성 로맨스
+MOVIE_ROM_GL,GL(걸즈러브),Girls’ Love,여성 동성 로맨스
+MOVIE_ROM_YOUTH,청춘 로맨스,Youth Romance,청춘/청년기 연애
+MOVIE_ROM_COMEDY,로맨틱 코미디,Romantic Comedy,코미디+로맨스
+MOVIE_ROM_MELODRAMA,멜로,Melodrama,감성·눈물
+MOVIE_ROM_SECONDCHANCE,재회로맨스,Second Chance,이별 후 재회
+MOVIE_FAM_GEN,가족,Family,가족관계 중심
+MOVIE_FAM_SINGLEPARENT,싱글맘/대디,Single Parent,한부모 가족
+MOVIE_FAM_MARRIAGE,결혼/이혼,Marriage/Divorce,결혼생활/이혼
+MOVIE_FAM_SIBLING,형제자매,Sibling,형제·자매 이야기
+MOVIE_FAM_STEPFAMILY,재혼가족,Step Family,재혼·합가 가족
+MOVIE_FAM_ADOPTION,입양가족,Adoption,입양아 소재
+MOVIE_THR_GEN,스릴러,Thriller,긴장·반전
+MOVIE_THR_PSYCHO,심리스릴러,Psychological Thriller,광기/두뇌싸움
+MOVIE_THR_POLICE,경찰스릴러,Police Thriller,경찰·수사
+MOVIE_THR_LEGAL,법정스릴러,Legal Thriller,법정·변호사
+MOVIE_THR_POLITICS,정치스릴러,Political Thriller,정치·비리
+MOVIE_THR_MEDICAL,메디컬스릴러,Medical Thriller,의료·병원
+MOVIE_THR_TECH,테크스릴러,Tech Thriller,해킹/AI
+MOVIE_THR_CRIME,범죄스릴러,Crime Thriller,조직·강도
+MOVIE_THR_SUPERNATURAL,초자연스릴러,Supernatural Thriller,귀신·이변
+MOVIE_THR_SURVIVAL,생존스릴러,Survival Thriller,생존·탈출
+MOVIE_CRIME_GEN,범죄,Crime,범죄·수사 중심
+MOVIE_CRIME_SERIAL,연쇄살인,Serial Killer,연쇄살인
+MOVIE_CRIME_DETECTIVE,탐정,Detective,탐정 주인공
+MOVIE_CRIME_ORGANIZED,조직범죄,Organized Crime,조폭/갱단
+MOVIE_CRIME_FRAUD,사기/금융,Scam/Fraud,금융범죄
+MOVIE_CRIME_HEIST,강도,Heist,도둑·강탈
+MOVIE_CRIME_HOSTAGE,인질극,Hostage,인질·협상
+MOVIE_CRIME_CYBER,사이버범죄,Cyber Crime,해킹/인터넷 범죄
+MOVIE_MYST_GEN,미스터리,Mystery,비밀·추리
+MOVIE_MYST_AMNESIA,기억상실,Amnesia Mystery,기억상실
+MOVIE_MYST_CONSPIRACY,음모론,Conspiracy,국가/집단 음모
+MOVIE_MYST_SUPERNATURAL,초자연 미스터리,Supernatural Mystery,이변/귀신
+MOVIE_MYST_DUALTIMELINE,이중타임라인,Dual Timeline,과거/현재 교차
+MOVIE_COM_GEN,코미디,Comedy,유머/풍자 영화
+MOVIE_COM_DARK,다크코미디,Dark Comedy,블랙유머
+MOVIE_COM_ROM,로맨틱코미디,Romantic Comedy,코미디+로맨스
+MOVIE_COM_SATIRE,풍자,Satire,정치/사회풍자
+MOVIE_COM_SLAPSTICK,슬랩스틱,Slapstick,몸개그/익살
+MOVIE_COM_MOCKU,모큐멘터리,Mockumentary,가짜 다큐 형식
+MOVIE_COM_STANDUP,스탠드업,Stand-up Comedy,스탠드업 공연
+MOVIE_COM_TEEN,틴코미디,Teen Comedy,청소년 코미디
+MOVIE_COM_WORK,직장코미디,Workplace Comedy,직장/회사 생활 코미디
+MOVIE_COM_FAMILY,가족코미디,Family Comedy,가족 구성원 중심
+MOVIE_ANIME_GEN,애니메이션,Animation,장르불문 전체 애니
+MOVIE_ANIME_ACTION,액션애니,Action Animation,액션/격투
+MOVIE_ANIME_SF,공상과학애니,Sci-Fi Animation,우주·미래·기계
+MOVIE_ANIME_FANTASY,판타지애니,Fantasy Animation,마법/이세계
+MOVIE_ANIME_SLICEOFLIFE,일상물,Slice of Life,잔잔한 일상/성장
+MOVIE_ANIME_ROMANCE,로맨스애니,Romance Animation,사랑·연애
+MOVIE_ANIME_COMEDY,코미디애니,Comedy Animation,개그·유머
+MOVIE_ANIME_HORROR,호러애니,Horror Animation,공포/괴담
+MOVIE_ANIME_MECHA,로봇/메카,Mecha Animation,로봇/기계
+MOVIE_ANIME_SPORTS,스포츠애니,Sports Animation,스포츠·경쟁
+MOVIE_ANIME_MYSTERY,미스터리애니,Mystery Animation,추리·비밀
+MOVIE_ANIME_HISTORICAL,역사애니,Historical Animation,역사/사극
+MOVIE_ANIME_SUPERNATURAL,초자연애니,Supernatural Animation,귀신/이능력
+MOVIE_ANIME_MUSIC,음악애니,Music Animation,밴드/아이돌
+MOVIE_ANIME_FAMILY,가족애니,Family Animation,가족·우정 중심
+MOVIE_ANIME_CULINARY,요리애니,Culinary Animation,요리·음식 소재
+MOVIE_ANIME_EDUCATIONAL,교육애니,Educational Animation,지식/학습용
+MOVIE_ANIME_ADVENTURE,모험애니,Adventure Animation,탐험·여행
+MOVIE_ANIME_GIRLS,소녀물,Girls Animation,여자주인공/성장
+MOVIE_ANIME_BOYS,소년물,Boys Animation,남자주인공/우정
+MOVIE_DOC_GEN,다큐멘터리,Documentary,논픽션·실화
+MOVIE_DOC_BIO,인물다큐,Biographical Doc,실존 인물·전기
+MOVIE_DOC_NATURE,자연다큐,Nature Doc,동물·환경·생태
+MOVIE_DOC_SCIENCE,과학다큐,Science Doc,과학·기술
+MOVIE_DOC_HISTORY,역사다큐,History Doc,역사/과거 사건
+MOVIE_DOC_CRIME,범죄다큐,Crime Doc,실제 범죄사건
+MOVIE_DOC_SOCIAL,사회문제다큐,Social Issue Doc,사회/제도/이슈
+MOVIE_DOC_MUSIC,음악다큐,Music Doc,음악가/공연/밴드
+MOVIE_DOC_ART,예술다큐,Art Doc,미술/디자인
+MOVIE_DOC_TRAVEL,여행다큐,Travel Doc,세계/탐험
+MOVIE_DOC_SPORTS,스포츠다큐,Sports Doc,선수/경기/운동
+MOVIE_DOC_MEDICAL,의료다큐,Medical Doc,병원/의학
+MOVIE_DOC_POLITICS,정치다큐,Political Doc,정치/권력
+MOVIE_DOC_ENVIRONMENT,환경다큐,Environmental Doc,기후/지구
+MOVIE_DOC_WAR,전쟁다큐,War Doc,전쟁/군사
+MOVIE_DOC_EDUCATIONAL,교육다큐,Educational Doc,학습/지식
+MOVIE_MUSIC_GEN,음악영화,Music Movie,음악가/밴드/가수
+MOVIE_MUSIC_CONCERT,공연실황,Concert Film,실제 콘서트/공연
+MOVIE_MUSIC_MUSICAL,뮤지컬영화,Musical,뮤지컬/쇼
+MOVIE_MUSIC_CLASSICAL,클래식음악,Classical Music,오케스트라/성악
+MOVIE_MUSIC_POP,팝음악,Pop Music,대중음악
+MOVIE_MUSIC_JAZZ,재즈, Jazz Music,재즈/블루스
+MOVIE_MUSIC_ROCK,록,Rock Music,밴드/기타
+MOVIE_MUSIC_HIPHOP,힙합,Hip-hop,랩/힙합음악
+MOVIE_MUSIC_IDOL,아이돌,Idol Music,아이돌/댄스음악
+MOVIE_MUSIC_TRADITIONAL,국악/전통음악,Traditional,한국 전통음악
+MOVIE_MUSIC_FOLK,포크/Folk,Folk Music,포크송/컨트리
+MOVIE_MUSIC_OPERA,오페라,Opera,성악/오페라
+MOVIE_MUSIC_EDM,일렉트로닉,EDM,전자음악/클럽
+MOVIE_MUSIC_SOUNDTRACK,OST,Soundtrack,영화/드라마 OST
+MOVIE_MUSIC_CHOIR,합창/코러스,Choir,합창단/코러스
+MOVIE_SPORTS_GEN,스포츠, Sports,스포츠 전체
+MOVIE_SPORTS_SOCCER,축구, Soccer,축구경기/선수
+MOVIE_SPORTS_BASEBALL,야구, Baseball,야구경기/선수
+MOVIE_SPORTS_BASKETBALL,농구, Basketball,농구경기/선수
+MOVIE_SPORTS_VOLLEYBALL,배구, Volleyball,배구경기
+MOVIE_SPORTS_TENNIS,테니스, Tennis,테니스/경기
+MOVIE_SPORTS_GOLF,골프, Golf,프로/아마추어 골프
+MOVIE_SPORTS_SWIMMING,수영, Swimming,수영대회/경기
+MOVIE_SPORTS_BOXING,복싱, Boxing,권투/격투
+MOVIE_SPORTS_MMA,종합격투기, MMA,종합/격투스포츠
+MOVIE_SPORTS_MARATHON,마라톤,Marathon,장거리/달리기
+MOVIE_SPORTS_TRACK,육상,Track&Field,트랙·필드
+MOVIE_SPORTS_ICE,빙상스포츠, Ice Sports,스케이팅/아이스하키
+MOVIE_SPORTS_SKATE,스케이트/보드, Skate/Board Sports,보드/스케이트
+MOVIE_SPORTS_CYCLING,자전거,Cycling,로드/산악자전거
+MOVIE_SPORTS_MOTOR,자동차/모터스포츠, Motor Sports,자동차경주
+MOVIE_SPORTS_EQUESTRIAN,승마,Equestrian,말/승마경기
+MOVIE_SPORTS_CLIMBING,등산/클라이밍, Climbing,등산/클라이밍
+MOVIE_SPORTS_SURFING,서핑,Surfing,파도타기/수상스포츠
+MOVIE_SPORTS_FISHING,낚시,Fishing,낚시경기
+MOVIE_SPORTS_ESPORTS,이스포츠,e-Sports,게임/프로게이머
+MOVIE_SPORTS_OLYMPICS,올림픽,Olympics,종합대회/올림픽

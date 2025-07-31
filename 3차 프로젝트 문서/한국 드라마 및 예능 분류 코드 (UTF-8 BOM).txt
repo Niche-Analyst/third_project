@@ -1,0 +1,301 @@
+code,kor_label,eng_label,설명/비고
+KDRAMA_001,전통사극,Traditional Historical,조선·고려 등 고전시대 배경
+KDRAMA_002,퓨전사극,Historical Fusion,현대적 요소 결합 사극
+KDRAMA_003,근현대극,Modern Historical,일제강점기·현대 초창기
+KDRAMA_004,청춘로맨스,Youth Romance,청소년·대학생 중심 로맨스
+KDRAMA_005,멜로,Melodrama,감정 중심 드라마
+KDRAMA_006,로맨틱코미디,Romantic Comedy,코믹한 러브스토리
+KDRAMA_007,학교물,School Drama,고등학교·대학 등 학교 배경
+KDRAMA_008,성장드라마,Coming-of-Age,청소년·성장과정 중심
+KDRAMA_009,가족드라마,Family Drama,가족 중심, 세대 갈등 등
+KDRAMA_010,휴먼드라마,Human Drama,인간애·감동 중심
+KDRAMA_011,법정물,Legal Drama,변호사·검사·법원 등
+KDRAMA_012,의학드라마,Medical Drama,병원·의사·간호사 중심
+KDRAMA_013,스릴러,Thriller,긴장감·추리 중심
+KDRAMA_014,미스터리,Mystery,사건·비밀·반전 등
+KDRAMA_015,범죄수사,Crime/Investigation,형사·수사·경찰 등
+KDRAMA_016,정치드라마,Political Drama,정치·권력·사회 비판
+KDRAMA_017,판타지,Fantasy,초능력·비현실적 소재
+KDRAMA_018,타임슬립,Time Slip,시간여행·시공간 이동
+KDRAMA_019,SF,Science Fiction,과학·우주·미래 소재
+KDRAMA_020,웹툰원작,Webtoon-based,웹툰·웹소설 원작
+KDRAMA_021,로맨스판타지,Romance Fantasy,로맨스+판타지
+KDRAMA_022,로맨스멜로,Romance Melodrama,정통 러브스토리
+KDRAMA_023,청춘성장,Youth & Growth,성장통·성인식
+KDRAMA_024,캠퍼스물,Campus Drama,대학교 배경
+KDRAMA_025,직장물,Office Drama,회사·직장인 중심
+KDRAMA_026,경제드라마,Economic Drama,기업·경제 소재
+KDRAMA_027,음악드라마,Music Drama,음악·밴드·아이돌 등
+KDRAMA_028,예술드라마,Art Drama,미술·연극·무용 등
+KDRAMA_029,의료판타지,Medical Fantasy,의학+초자연 소재
+KDRAMA_030,군대드라마,Military Drama,군 생활·군인 중심
+KDRAMA_031,로맨틱스릴러,Romantic Thriller,스릴러+로맨스
+KDRAMA_032,재벌/재계물,Chaebol Drama,재벌가·기업가 배경
+KDRAMA_033,복수극,Revenge Drama,복수·응징 중심
+KDRAMA_034,사회비판,Social Critique,사회문제·비판
+KDRAMA_035,법의학,Forensic Drama,법의학·범죄분석
+KDRAMA_036,가상역사,Alternate History,역사 왜곡/가상
+KDRAMA_037,코미디,Comedy,유쾌한 에피소드
+KDRAMA_038,로맨스스릴러,Romance Thriller,로맨스+서스펜스
+KDRAMA_039,호러,Horror,공포·심령 소재
+KDRAMA_040,재난드라마,Disaster Drama,재난·위기 상황
+KDRAMA_041,환경드라마,Environmental,환경·생태 소재
+KDRAMA_042,장르혼합,Mixed Genre,복합장르
+KDRAMA_043,법정스릴러,Legal Thriller,법정+스릴러
+KDRAMA_044,첩보물,Spy Drama,첩보·정보기관 소재
+KDRAMA_045,아동/키즈,Kids Drama,아동·가족 시청용
+KDRAMA_046,동물드라마,Animal Drama,동물·펫 소재
+KDRAMA_047,하이틴로맨스,Teen Romance,고등학생 중심 러브스토리
+KDRAMA_048,직업드라마,Occupation Drama,특정 직업(소방관 등)
+KDRAMA_049,서바이벌,Survival Drama,생존·경쟁 구조
+KDRAMA_050,단막극,Omnibus Drama,단편 에피소드형
+KDRAMA_051,인터랙티브,Interactive Drama,시청자 참여형
+KDRAMA_052,미니시리즈,Miniseries,짧은 시즌 구성
+KDRAMA_053,장편드라마,Long-run Drama,50부작 이상 등
+KDRAMA_054,다큐드라마,Docu Drama,실제사건 기반
+KDRAMA_055,실화극,True Story,실제 인물/사건
+KDRAMA_056,동성애/퀴어,Queer Drama,LGBTQ 소재
+KDRAMA_057,공포로맨스,Horror Romance,공포+러브스토리
+KDRAMA_058,범죄코미디,Crime Comedy,범죄+코믹
+KDRAMA_059,추억극,Nostalgia,과거 회상 중심
+KDRAMA_060,영웅물,Hero Drama,히어로/영웅 소재
+KDRAMA_061,의료스릴러,Medical Thriller,의학+서스펜스
+KDRAMA_062,운명/환생,Fate/Reincarnation,환생·운명 소재
+KDRAMA_063,음식드라마,Food Drama,요리·음식 소재
+KDRAMA_064,스포츠드라마,Sports Drama,스포츠/경기 중심
+KDRAMA_065,여행드라마,Travel Drama,여행기 구조
+KDRAMA_066,멘토링드라마,Healing/Mentoring,멘토·힐링 중심
+KDRAMA_067,해외촬영,Overseas,해외 올로케이션
+KDRAMA_068,인터넷드라마,Web Drama,5~15분 분량 웹 전용
+KDRAMA_069,코스튬플레이,Cosplay Drama,코스프레 소재
+KDRAMA_070,블랙코미디,Black Comedy,풍자/비틀기
+KDRAMA_071,청춘멜로,Youth Melodrama,청춘의 성장·사랑
+KDRAMA_072,모큐멘터리,Mockumentary,페이크 다큐 형식
+KDRAMA_073,전기드라마,Biographical Drama,실존 인물 중심
+KDRAMA_074,철학드라마,Philosophy,철학·명상 소재
+KDRAMA_075,과학드라마,Science Drama,과학자/연구 중심
+KDRAMA_076,비즈니스드라마,Business Drama,창업·비즈니스 소재
+KDRAMA_077,대체역사,Alternative History,역사 가정
+KDRAMA_078,해양드라마,Marine Drama,바다·선박 등
+KDRAMA_079,중장년드라마,Middle-age,중장년층 주연
+KDRAMA_080,여성중심,Women-Centric,여성 주인공/관점
+KDRAMA_081,남성중심,Men-Centric,남성 주인공/관점
+KDRAMA_082,다문화드라마,Multicultural,다문화 가정/소재
+KDRAMA_083,신화전설,Myth/Legend,전설·신화 기반
+KDRAMA_084,범죄실화,True Crime,실제 범죄 사건
+KDRAMA_085,아트하우스,Art House,예술 영화풍
+KDRAMA_086,가상미래,Future Fiction,미래/가상 사회
+KDRAMA_087,로맨스어드벤처,Romance Adventure,모험+러브스토리
+KDRAMA_088,차별극,Discrimination Drama,사회적 차별소재
+KDRAMA_089,동물/펫,Pet Drama,반려동물 중심
+KDRAMA_090,철도/여행,Train/Travel,철도·여행기
+KDRAMA_091,건강/의료,Health/Medical,건강/의학 정보
+KDRAMA_092,요리/맛집,Food/Cooking,요리·맛집 탐방
+KDRAMA_093,가정폭력/사회고발,Social Issues,사회문제 고발
+KDRAMA_094,이중인격,Split Personality,다중/이중 인격
+KDRAMA_095,멘탈헬스,Mental Health,정신 건강 소재
+KDRAMA_096,방송국/연예계,Showbiz,연예계 배경
+KDRAMA_097,해외입양,Adoption,해외 입양 소재
+KDRAMA_098,수사관/탐정,Detective,탐정물/수사극
+KDRAMA_099,도시전설,Urban Legend,도시괴담/괴담 소재
+KDRAMA_100,무협/액션,Martial Arts/Action,무협·액션 장르
+KVARIETY_001,리얼리티,Reality,연예인·일상·관찰
+KVARIETY_002,관찰예능,Observational,가정/일상 관찰
+KVARIETY_003,육아예능,Child-rearing,육아·자녀 중심
+KVARIETY_004,부부/가족,Family/Marriage,가족·부부 관찰
+KVARIETY_005,집/인테리어,Home/Interior,집 리폼·인테리어
+KVARIETY_006,여행예능,Travel,국내/해외 여행기
+KVARIETY_007,먹방,Food Show,음식 먹방
+KVARIETY_008,쿡방,Cooking,요리·레시피
+KVARIETY_009,토크쇼,Talk Show,게스트·심층토크
+KVARIETY_010,라디오/음악,Radio/Music,음악/라디오/디제잉
+KVARIETY_011,연애예능,Romance,짝짓기/썸/연애관찰
+KVARIETY_012,소개팅예능,Dating Show,소개팅·미팅
+KVARIETY_013,서바이벌,Survival,탈락·경연 구조
+KVARIETY_014,오디션,Audition,가창·댄스·연기 등 경연
+KVARIETY_015,댄스경연,Dance Competition,댄스 대결
+KVARIETY_016,노래경연,Singing Competition,노래 대결
+KVARIETY_017,밴드/음악,Music/Band,밴드/연주/합창
+KVARIETY_018,클래식음악,Classical Music,클래식 전문
+KVARIETY_019,밴드경연,Band Competition,밴드 대결
+KVARIETY_020,유행/트렌드,Trend,최신 유행 소개
+KVARIETY_021,패션/뷰티,Fashion/Beauty,메이크업·스타일링
+KVARIETY_022,요리대결,Cook-off,셰프 경연
+KVARIETY_023,차박/캠핑,Camping,차박/캠핑·자연체험
+KVARIETY_024,게임예능,Game Show,게임/퀴즈/챌린지
+KVARIETY_025,스포츠예능,Sports,스포츠/운동/체험
+KVARIETY_026,방탈출,Escape Room,방탈출/미션수행
+KVARIETY_027,도시/자연,Urban/Nature,도시·자연체험
+KVARIETY_028,직업체험,Job Experience,직업/직장인 리얼리티
+KVARIETY_029,공감토크,Empathy Talk,공감/고민상담
+KVARIETY_030,심야토크,Late-night Talk,심야/성인 토크
+KVARIETY_031,어린이예능,Kids Variety,아동/어린이
+KVARIETY_032,반려동물,Pet Show,반려동물·동물 예능
+KVARIETY_033,다큐예능,Docu-Variety,다큐+예능 포맷
+KVARIETY_034,과학/실험,Science/Experiment,실험·과학
+KVARIETY_035,퀴즈쇼,Quiz Show,퀴즈 대결
+KVARIETY_036,직장예능,Office Variety,회사·직장인 생활
+KVARIETY_037,동물농장,Animal Farm,농장/동물 소재
+KVARIETY_038,어촌/농촌,Country Life,시골·귀촌·귀농
+KVARIETY_039,힐링예능,Healing,자연·명상·힐링 소재
+KVARIETY_040,예체능,Art & Sports,예술·체육 복합
+KVARIETY_041,미술/공예,Art/Craft,공예/DIY
+KVARIETY_042,만남/재회,Reunion,재회·만남의 장
+KVARIETY_043,부자예능,Rich Life,재벌·부자 체험
+KVARIETY_044,DIY/생활,DIY/Lifestyle,셀프제작·생활팁
+KVARIETY_045,멘토링,Coaching,멘토·인생 조언
+KVARIETY_046,심리/성격,Psychology,성격·심리 진단
+KVARIETY_047,교육예능,Education,학습/교육 중심
+KVARIETY_048,사회실험,Social Experiment,사회문제 체험
+KVARIETY_049,성장스토리,Growth,성장·성인식 예능
+KVARIETY_050,부동산/집,Real Estate,집/부동산 소재
+KVARIETY_051,국제/해외,International,해외 로케이션
+KVARIETY_052,취미/특기,Hobby,취미·특기 개발
+KVARIETY_053,건강/운동,Health/Fitness,건강/운동 중심
+KVARIETY_054,생활경제,Economic,재테크/경제 예능
+KVARIETY_055,직업리얼,Job Reality,특정직업 리얼리티
+KVARIETY_056,도전/미션,Challenge,미션수행·도전
+KVARIETY_057,커플/부부,Couple/Marriage,커플·부부관계
+KVARIETY_058,스피드/레이싱,Speed/Racing,자동차·레이싱
+KVARIETY_059,친구/우정,Friendship,우정·친목 중심
+KVARIETY_060,이색경험,Unique Experience,특이한 체험
+KVARIETY_061,과거회상,Flashback,추억·회상 포맷
+KVARIETY_062,캠퍼스,Campus Life,대학교·캠퍼스 예능
+KVARIETY_063,문화예능,Cultural,문화체험·예술 소개
+KVARIETY_064,생활정보,Life Info,유용한 생활 정보
+KVARIETY_065,유튜브/인터넷,YouTube/Internet,인터넷 크리에이터
+KVARIETY_066,오프더레코드,Off the Record,비하인드·비공식
+KVARIETY_067,인문학,Humanities,인문학 강의·토론
+KVARIETY_068,명사/인터뷰,Interview,명사 초청 인터뷰
+KVARIETY_069,고민상담,Counseling,고민상담·조언
+KVARIETY_070,동호회/모임,Club/Social,동호회·모임
+KVARIETY_071,팬덤/스타,Fandom/Star,팬덤/연예인 중심
+KVARIETY_072,군대예능,Military,군생활·부대체험
+KVARIETY_073,어린이퀴즈,Kids Quiz,어린이 대상 퀴즈쇼
+KVARIETY_074,명소탐방,Place Exploring,명소·관광지 탐방
+KVARIETY_075,패밀리게임,Family Game,가족 게임
+KVARIETY_076,연예계리얼,Showbiz Reality,연예계 생활/고발
+KVARIETY_077,도전예능,Challenge Variety,극한 도전/미션
+KVARIETY_078,미스터리,Variety Mystery,미스터리/추리
+KVARIETY_079,자연인,Living in Nature,자연 속 생활
+KVARIETY_080,웹예능,Web Variety,웹 플랫폼 전용
+KVARIETY_081,VR/AR,VR/AR Show,VR/AR 기술 활용
+KVARIETY_082,기부/나눔,Charity,기부·자원봉사
+KVARIETY_083,노인/실버,Senior,노년층 예능
+KVARIETY_084,도시전설,Urban Legend,도시괴담/괴담 소재
+KVARIETY_085,환경/지구,Environment,환경·생태 소재
+KVARIETY_086,팬미팅,Fan Meeting,팬들과 소통
+KVARIETY_087,스탠드업코미디,Stand-up Comedy,스탠드업/개그
+KVARIETY_088,음식대결,Food Competition,먹방+경연
+KVARIETY_089,화제/이슈,Trending Issue,최신 이슈 소개
+KVARIETY_090,스토리텔링,Storytelling,이야기 중심 예능
+KVARIETY_091,비밀/추리,Secret/Mystery,비밀·추리·암호
+KVARIETY_092,로맨스웹예능,Web Romance,웹 기반 로맨스
+KVARIETY_093,여성예능,Women Variety,여성 출연자 중심
+KVARIETY_094,남성예능,Men Variety,남성 출연자 중심
+KVARIETY_095,자격증/도전,License Challenge,자격증 취득 도전
+KVARIETY_096,경제실험,Economic Exp,경제실험/실생활 실험
+KVARIETY_097,노동/현장,Field Work,노동/현장 체험
+KVARIETY_098,과학실험,Science Exp,과학실험/탐구
+KVARIETY_099,현장중계,Field Broadcasting,현장중계/리얼
+KVARIETY_100,심층분석,In-depth,이슈·사건 심층 해설
+KVARIETY_101,연애상담,Romance Counseling,연애문제 상담
+KVARIETY_102,노래자랑,Singing Show,일반인 노래대회
+KVARIETY_103,댄스버라이어티,Dance Variety,댄스+예능
+KVARIETY_104,멘사/지능,Mensa/Intelligence,지능·두뇌 예능
+KVARIETY_105,챌린지쇼,Challenge Show,도전·경연 포맷
+KVARIETY_106,바다/낚시,Fishing,바다·낚시 체험
+KVARIETY_107,자동차/모터,Car/Motor,자동차·오토바이
+KVARIETY_108,포장마차,Pocha Show,포장마차·노상음식
+KVARIETY_109,동네탐방,Local Exploring,동네·시장 탐방
+KVARIETY_110,유적/역사,Heritage,역사유적·박물관
+KVARIETY_111,중년/부부,Middle-aged,중년·부부 예능
+KVARIETY_112,취업/창업,Job Start-up,취업·창업 도전
+KVARIETY_113,실험실예능,Lab Show,실험실 기반
+KVARIETY_114,서민/소시민,Common People,일상/서민 중심
+KVARIETY_115,백종원류,Baek Jong-won Style,푸드 컨설팅/창업
+KVARIETY_116,MC/진행쇼,MC Hosting,진행/호스트 중심
+KVARIETY_117,여행경비,Travel Budget,여행 비용 챌린지
+KVARIETY_118,이색버라이어티,Unique Variety,특이 포맷
+KVARIETY_119,집콕/랜선,Home Streaming,집콕/비대면/랜선
+KVARIETY_120,공연예능,Performance,라이브 공연 중심
+KVARIETY_121,글로벌/외국,Global/Foreign,외국인 출연·글로벌
+KVARIETY_122,쇼트폼,Short-form,5~10분 짧은 예능
+KVARIETY_123,아티스트,Artist Show,예술가/아티스트 중심
+KVARIETY_124,기획특집,Special Project,특집/테마 중심
+KVARIETY_125,라이브방송,Live Broadcast,생방송 포맷
+KVARIETY_126,의학/건강,Medical/Health,의학·건강 정보
+KVARIETY_127,동물관찰,Animal Watching,동물 관찰·탐험
+KVARIETY_128,장수/실버,Longevity,장수·노년 예능
+KVARIETY_129,과학탐험,Science Exploration,과학·자연탐험
+KVARIETY_130,극한직업,Extreme Jobs,극한체험/직업소개
+KVARIETY_131,트랜스젠더/퀴어,Queer/Trans,성소수자 예능
+KVARIETY_132,자연재해,Disaster/Nature,재해/재난 체험
+KVARIETY_133,미용/의학,Beauty/Medical,성형·미용 정보
+KVARIETY_134,연예인게임,Star Game,연예인 대결/게임
+KVARIETY_135,공감버라이어티,Empathy Variety,공감/감동
+KVARIETY_136,하이틴예능,Teen Variety,청소년/학생
+KVARIETY_137,기록/다큐,Record/Docu,기록·다큐 중심
+KVARIETY_138,의료리얼,Medical Reality,의료 현장 리얼리티
+KVARIETY_139,상금/경품,Prize/Reward,상금/경품 대결
+KVARIETY_140,리포터/취재,Reporter/Field,현장 리포터 중심
+KVARIETY_141,팬/덕후,Fan/Otaku,팬·덕질 소재
+KVARIETY_142,과학유튜브,Science YouTube,유튜브 과학채널
+KVARIETY_143,운동회/Sports Day,Sports Day,운동회/체육대회
+KVARIETY_144,모임/동아리,Club/Group,동아리/소모임
+KVARIETY_145,강연/특강,Lecture/Special,강연/특강 포맷
+KVARIETY_146,이색챌린지,Unique Challenge,특이한 챌린지
+KVARIETY_147,부동산/경제,Real Estate/Economics,부동산/경제 정보
+KVARIETY_148,아동교육,Child Education,아동 교육 예능
+KVARIETY_149,키즈창의,Kids Creativity,창의/STEAM 교육
+KVARIETY_150,직장생활,Workplace Life,직장인 일상
+KVARIETY_151,사건/사고,Incident/Accident,사건·사고 리얼리티
+KVARIETY_152,한류/글로벌,K-Culture,한류/글로벌 진출
+KVARIETY_153,인터랙티브,Interactive,시청자 참여형
+KVARIETY_154,가상현실,Virtual Reality,VR/AR 활용
+KVARIETY_155,실버라이프,Senior Life,실버세대 라이프
+KVARIETY_156,경제토론,Economic Debate,경제 이슈 토론
+KVARIETY_157,환경토론,Environment Debate,환경 이슈 토론
+KVARIETY_158,미디어비평,Media Critique,미디어/방송 비평
+KVARIETY_159,사회참여,Social Engagement,사회참여/봉사
+KVARIETY_160,환경실험,Environmental Exp,환경/생태 실험
+KVARIETY_161,뮤지컬쇼,Musical Show,뮤지컬+예능
+KVARIETY_162,로봇/AI,Robot/AI,로봇·AI 관련 예능
+KVARIETY_163,IT/테크,IT/Tech,IT기술·트렌드 소개
+KVARIETY_164,미래직업,Future Jobs,미래 유망직업 소개
+KVARIETY_165,생활꿀팁,Life Hacks,생활의 지혜/팁
+KVARIETY_166,법률상식,Legal Info,법률 정보 예능
+KVARIETY_167,뉴스/시사,News/Current Affairs,뉴스+예능 포맷
+KVARIETY_168,정치토크,Political Talk,정치 토크쇼
+KVARIETY_169,민속/전통,Folk/Tradition,민속놀이·전통문화
+KVARIETY_170,축제/이벤트,Festival/Event,축제·이벤트 현장
+KVARIETY_171,플래시몹,Flashmob,플래시몹/이벤트
+KVARIETY_172,엔터테인먼트,Entertainment,오락/연예예능
+KVARIETY_173,코미디쇼,Comedy Show,코미디 중심
+KVARIETY_174,라디오방송,Radio Broadcasting,라디오 생방송
+KVARIETY_175,시네마/영화,Cinema/Film,영화 관련 예능
+KVARIETY_176,이색직업,Unique Jobs,희귀/특이한 직업
+KVARIETY_177,아카데미쇼,Academy Show,아카데미 시상식/특집
+KVARIETY_178,국악/전통음악,Korean Classical Music,국악·전통음악
+KVARIETY_179,사투리쇼,Dialect Show,사투리·방언 소재
+KVARIETY_180,건축/디자인,Architecture/Design,건축·인테리어 디자인
+KVARIETY_181,캣맘/강아지맘,Catmom/Dogmom,반려동물 육아
+KVARIETY_182,비즈니스쇼,Business Show,비즈니스/창업 예능
+KVARIETY_183,자유주제,Free Topic,주제 제한 없는 예능
+KVARIETY_184,익스트림쇼,Extreme Show,극한 체험/도전
+KVARIETY_185,아웃도어,Outdoor,야외·아웃도어 체험
+KVARIETY_186,음악페스티벌,Music Festival,음악 페스티벌 실황
+KVARIETY_187,보컬/랩,Voice/Rap,보컬·랩 경연
+KVARIETY_188,연기경연,Acting Competition,연기자 경연
+KVARIETY_189,연예뉴스,Entertainment News,연예계 뉴스
+KVARIETY_190,운동선수,Pro Athlete,운동선수 출연
+KVARIETY_191,과거/역사,Past/History,과거 소재 예능
+KVARIETY_192,자연생태,Nature,자연/생태계 체험
+KVARIETY_193,패밀리밴드,Family Band,가족밴드 경연
+KVARIETY_194,마술/퍼포먼스,Magic/Performance,마술·퍼포먼스 예능
+KVARIETY_195,애니메이션쇼,Animation Show,애니메이션+예능
+KVARIETY_196,캣/도그쇼,Cat/Dog Show,고양이/강아지 쇼
+KVARIETY_197,장애/복지,Disability/Welfare,장애인·복지 예능
+KVARIETY_198,무대뒤/백스테이지,Backstage,백스테이지/무대뒤
+KVARIETY_199,식물/가드닝,Plant/Gardening,식물·가드닝 소재
+KVARIETY_200,특집/공익,Special/Public,공익·특집방송
