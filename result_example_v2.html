@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niche Analyst – Result (Pyramid+Funnel v7)</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root{ --border:#e5e7eb; --chip:#f1f5f9; --muted:#64748b; }
+    body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif; }
+    .chip{background:var(--chip); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:#fff}
+    .btn:hover{box-shadow:0 1px 0 rgba(0,0,0,.05)}
+    .custom-scrollbar::-webkit-scrollbar{width:8px;height:8px}
+    .custom-scrollbar::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:999px}
+    .custom-scrollbar::-webkit-scrollbar-track{background:transparent}
+    .legend-dot{width:10px;height:10px;border-radius:999px;display:inline-block}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="font-extrabold tracking-tight">Niche Analyst</span>
+        <span class="hidden sm:inline text-slate-300">/</span>
+        <span class="hidden sm:inline text-slate-500">Result (v7)</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="btnExportPyramid" class="btn text-xs" title="Export ROI Pyramid as SVG">Export Pyramid</button>
+        <button id="btnPrint" class="btn text-xs" title="Print / Save as PDF">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9V2h12v7M6 18h12a2 2 0 002-2v-5H4v5a2 2 0 002 2z"/>
+          </svg>
+          <span>Export PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <!-- Product + Category -->
+    <section class="mb-4">
+      <div class="flex flex-wrap items-center gap-3">
+        <h1 class="text-2xl font-extrabold tracking-tight" id="title">포카리스웨트 광고</h1>
+        <span class="chip" id="category">식품 / 음료 / 이온음료</span>
+        <span class="chip">Demo</span>
+      </div>
+      <p class="mt-1 text-xs text-slate-500">※ 레이아웃 확인용 더미 데이터입니다. URL에 <code>?product=...&category=...</code>로 대체 가능.</p>
+    </section>
+
+    <!-- Target chips (survey-based hint) -->
+    <section class="bg-white border border-slate-200 rounded-xl p-4 mb-6">
+      <h2 class="text-sm font-bold mb-2">Primary Marketing Targets (Survey-based, by Category)</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="chip">Male 18–24</span>
+        <span class="chip">Female 18–34</span>
+        <span class="chip">High-activity lifestyle</span>
+        <span class="chip">Sports / Variety viewers</span>
+      </div>
+    </section>
+
+    <!-- Split layout -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <!-- LEFT (sticky) -->
+      <aside class="lg:col-span-7">
+        <div class="lg:sticky lg:top-20 space-y-6">
+          <!-- ROI Pyramid -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-bold">ROI Pyramid — Cohort Benchmarks</h3>
+              <div class="flex items-center gap-3 text-xs text-slate-500">
+                <span><span class="legend-dot" style="background:#93c5fd"></span> Top 10%</span>
+                <span><span class="legend-dot" style="background:#86efac"></span> Top 50%</span>
+                <span><span class="legend-dot" style="background:#fcd34d"></span> Top 80%</span>
+              </div>
+            </div>
+            <div class="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <!-- SVG Pyramid -->
+              <div class="relative">
+                <svg id="roiPyramid" viewBox="0 0 360 260" class="w-full h-[260px] border border-slate-100 rounded">
+                  <rect x="0" y="0" width="360" height="260" fill="white"/>
+                </svg>
+              </div>
+              <!-- Values -->
+              <div class="text-sm">
+                <ul class="space-y-2">
+                  <li class="flex items-center gap-2"><span class="legend-dot" style="background:#93c5fd"></span><span class="font-semibold">Top 10% Avg ROI</span><span class="ml-auto" id="roiTop">3.0×</span></li>
+                  <li class="flex items-center gap-2"><span class="legend-dot" style="background:#86efac"></span><span class="font-semibold">Top 50% Avg ROI</span><span class="ml-auto" id="roiMid">2.1×</span></li>
+                  <li class="flex items-center gap-2"><span class="legend-dot" style="background:#fcd34d"></span><span class="font-semibold">Top 80% Avg ROI</span><span class="ml-auto" id="roiBot">1.6×</span></li>
+                </ul>
+                <div class="mt-4 text-xs text-slate-500">
+                  <p>설명(더미): 상위 10%는 고효율 고점, 50%는 안정 구간, 80%는 보편 성과.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conversion Funnel with cohort buttons -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-bold">Exposure → Conversion Funnel</h3>
+              <div class="flex items-center gap-2">
+                <button class="chip cohortBtn" data-k="top10">Top 10%</button>
+                <button class="chip cohortBtn" data-k="top50">Top 50%</button>
+                <button class="chip cohortBtn" data-k="top80">Top 80%</button>
+                <button id="btnExportFunnel" class="btn text-xs">Export PNG</button>
+              </div>
+            </div>
+            <div class="relative h-72 mt-3"><canvas id="chart_funnel"></canvas></div>
+            <p class="mt-3 text-xs text-slate-500">상단 버튼으로 코호트별 규모·전환 병목을 비교하세요.</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT (scroll) -->
+      <section class="lg:col-span-5">
+        <div class="bg-white border border-slate-200 rounded-xl p-5 h-[calc(100vh-9rem)] overflow-y-auto custom-scrollbar">
+          <h3 class="text-base font-extrabold sticky top-0 bg-white py-2">PPL 성공 사례 (텍스트)</h3>
+          <ul class="mt-3 space-y-3 text-sm">
+            <li class="border-l-4 border-blue-500 pl-3">
+              <p class="font-semibold">사례 #1 — 스포츠 예능</p>
+              <p class="text-slate-600">경기 후 회복 문맥 노출. SNS 버즈↑, 시음회/리필 이벤트와 결합.</p>
+            </li>
+            <li class="border-l-4 border-emerald-500 pl-3">
+              <p class="font-semibold">사례 #2 — 캠퍼스 청춘 드라마</p>
+              <p class="text-slate-600">동아리/기숙사 장면 3–4회 분산. 편의점 매대 프로모션 병행.</p>
+            </li>
+            <li class="border-l-4 border-amber-500 pl-3">
+              <p class="font-semibold">사례 #3 — 주말 가족 예능</p>
+              <p class="text-slate-600">피크 전후 배치 + 가족 묶음 할인쿠폰 연계.</p>
+            </li>
+          </ul>
+
+          <div class="my-5 border-t border-slate-200"></div>
+
+          <!-- Past Simulation -->
+          <div class="mt-2">
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold">What-if: Past Drama</h4>
+              <button class="btn text-xs export" data-target="past">Export PNG</button>
+            </div>
+            <div class="relative h-52 mt-2"><canvas id="chart_past"></canvas></div>
+            <p class="text-xs text-slate-500 mt-2">가정: 4회 노출, 6주 관찰 → 누적 uplift +115% (더미)</p>
+          </div>
+
+          <!-- Upcoming Simulation -->
+          <div class="mt-6">
+            <div class="flex items-center justify-between">
+              <h4 class="text-sm font-bold">What-if: Upcoming/On-air</h4>
+              <button class="btn text-xs export" data-target="curr">Export PNG</button>
+            </div>
+            <div class="relative h-52 mt-2"><canvas id="chart_curr"></canvas></div>
+            <p class="text-xs text-slate-500 mt-2">가정: 주말 프라임, 3회 노출 → ROI +135% (더미)</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="mt-8 text-xs text-slate-500">
+      <p>Disclaimer: All numbers are mock for layout tests. Replace with API data later.</p>
+    </section>
+  </main>
+
+  <script>
+    // Print
+    document.getElementById('btnPrint').addEventListener('click',()=>window.print());
+
+    // Query params
+    (function(){
+      const p = new URLSearchParams(location.search);
+      const name = p.get('product'); const cat = p.get('category');
+      if(name) document.getElementById('title').textContent = name;
+      if(cat) document.getElementById('category').textContent = cat;
+    })();
+
+    // ---------------- ROI Pyramid (SVG) ----------------
+    const roiData = { top:3.0, mid:2.1, bot:1.6 }; // Top10, Top50, Top80
+    (function drawPyramid(){
+      const svg = document.getElementById('roiPyramid');
+      const W=360, H=260; const padX=30, padY=20; const baseWidth = W - padX*2;
+      const maxROI = Math.max(roiData.top, roiData.mid, roiData.bot);
+      const layerHeights = [70, 80, 90]; // visual balance
+      const colors = ['#93c5fd','#86efac','#fcd34d']; // top10, top50, top80
+      const labels = [`Top 10%`, `Top 50%`, `Top 80%`];
+      const values = [roiData.top, roiData.mid, roiData.bot];
+
+      // clear
+      while(svg.lastChild) svg.removeChild(svg.lastChild);
+      // baseline
+      const baseline = document.createElementNS('http://www.w3.org/2000/svg','line');
+      baseline.setAttribute('x1', padX); baseline.setAttribute('y1', H-padY);
+      baseline.setAttribute('x2', W-padX); baseline.setAttribute('y2', H-padY);
+      baseline.setAttribute('stroke', '#e5e7eb'); baseline.setAttribute('stroke-width','1');
+      svg.appendChild(baseline);
+
+      let currentY = H - padY;
+      [0,1,2].forEach((i)=>{
+        const h = layerHeights[i];
+        const width = baseWidth * (values[2-i] / maxROI);
+        const y1 = currentY; const y0 = currentY - h;
+        const w0 = width * 0.75; // taper
+        const w1 = width;
+        const cx = W/2;
+        const x0L = cx - w0/2, x0R = cx + w0/2;
+        const x1L = cx - w1/2, x1R = cx + w1/2;
+
+        const poly = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+        poly.setAttribute('points', `${x1L},${y1} ${x1R},${y1} ${x0R},${y0} ${x0L},${y0}`);
+        poly.setAttribute('fill', colors[2-i]);
+        poly.setAttribute('stroke', '#e5e7eb'); poly.setAttribute('stroke-width','1');
+        svg.appendChild(poly);
+
+        const label = document.createElementNS('http://www.w3.org/2000/svg','text');
+        label.setAttribute('x', cx); label.setAttribute('y', y0 + h/2);
+        label.setAttribute('text-anchor', 'middle'); label.setAttribute('dominant-baseline','middle');
+        label.setAttribute('fill', '#0f172a'); label.setAttribute('font-size','12'); label.setAttribute('font-weight','700');
+        label.textContent = `${labels[2-i]} • ${values[2-i].toFixed(1)}×`;
+        svg.appendChild(label);
+
+        currentY -= h;
+      });
+
+      // top cap
+      const topTri = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+      const topY = currentY - 10;
+      const topWidth = baseWidth * (roiData.top / maxROI) * 0.45;
+      const cx = W/2;
+      topTri.setAttribute('points', `${cx},${topY} ${cx-topWidth/2},${currentY} ${cx+topWidth/2},${currentY}`);
+      topTri.setAttribute('fill','#93c5fd'); topTri.setAttribute('opacity','0.3');
+      svg.appendChild(topTri);
+    })();
+
+    // Export Pyramid SVG
+    document.getElementById('btnExportPyramid').addEventListener('click',()=>{
+      const svg = document.getElementById('roiPyramid');
+      const serializer = new XMLSerializer();
+      const source = serializer.serializeToString(svg);
+      const blob = new Blob([source], {type: 'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'roi_pyramid.svg'; a.click();
+      setTimeout(()=>URL.revokeObjectURL(url), 500);
+    });
+
+    // ---------------- Conversion Funnel (Chart.js; cohort buttons) ----------------
+    const funnelPresets = {
+      top10: { users:[120000, 42000, 15000, 7200] },
+      top50: { users:[100000, 28000,  9000, 4200] },
+      top80: { users:[ 90000, 18000,  5000, 1800] }
+    };
+    let currentKey = 'top50';
+
+    const ctxF = document.getElementById('chart_funnel').getContext('2d');
+    const funnelChart = new Chart(ctxF, {
+      type:'bar',
+      data:{
+        labels:['Exposure','Search/Click','Add-to-Cart','Purchase'],
+        datasets:[{
+          label:'Users', data: funnelPresets[currentKey].users,
+          backgroundColor:['#dbeafe','#bfdbfe','#bbf7d0','#a7f3d0'],
+          borderColor:['#60a5fa','#3b82f6','#34d399','#10b981'], borderWidth:1
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false, indexAxis:'y',
+        plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:(ctx)=>`${ctx.parsed.x.toLocaleString()} users` } } },
+        scales:{ x:{ beginAtZero:true, ticks:{ callback:(v)=>v>=1000? (v/1000)+'k':v } } }
+      }
+    });
+
+    document.querySelectorAll('.cohortBtn').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const k = btn.dataset.k;
+        currentKey = k;
+        funnelChart.data.datasets[0].data = funnelPresets[k].users;
+        funnelChart.update();
+        document.querySelectorAll('.cohortBtn').forEach(b=>b.classList.remove('ring-2','ring-blue-500','bg-blue-50'));
+        btn.classList.add('ring-2','ring-blue-500','bg-blue-50');
+      });
+    });
+
+    document.getElementById('btnExportFunnel').addEventListener('click',()=>{
+      const url = document.getElementById('chart_funnel').toDataURL('image/png', 1);
+      const a = document.createElement('a'); a.href = url; a.download = `funnel_${currentKey}.png`; a.click();
+    });
+
+    // ---------------- Right-side small charts (Past/Upcoming) ----------------
+    const optCommon = {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{ position:'top', labels:{ usePointStyle:true, pointStyle:'circle', boxWidth:8 } }, tooltip:{ mode:'index', intersect:false } },
+      interaction:{ mode:'index', intersect:false },
+      elements:{ line:{ tension:0.3 } }
+    };
+
+    const ctxPast = document.getElementById('chart_past').getContext('2d');
+    new Chart(ctxPast, {
+      type:'line',
+      data:{ labels:['Pre','W1','W4','W8','Post'], datasets:[{label:'Projected Uplift', data:[1,80,150,180,120], borderColor:'rgba(139,92,246,1)', backgroundColor:'rgba(139,92,246,0.12)', fill:true}]},
+      options: optCommon
+    });
+
+    const ctxCurr = document.getElementById('chart_curr').getContext('2d');
+    new Chart(ctxCurr, {
+      type:'line',
+      data:{ labels:['Pre','W1','W4','W8','Post'], datasets:[{label:'Projected ROI (x)', data:[1,1.4,2.1,2.7,2.0], borderColor:'rgba(234,88,12,1)', backgroundColor:'rgba(234,88,12,0.12)', fill:true}]},
+      options: optCommon
+    });
+
+    // Export right charts
+    function exportChart(canvasId, name){
+      const canvas = document.getElementById(canvasId);
+      const url = canvas.toDataURL('image/png', 1);
+      const a = document.createElement('a'); a.href = url; a.download = name + '.png'; a.click();
+    }
+    document.querySelectorAll('.export').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const map = { past:'chart_past', curr:'chart_curr' };
+        exportChart(map[btn.dataset.target], btn.dataset.target);
+      });
+    });
+  </script>
+</body>
+</html>
