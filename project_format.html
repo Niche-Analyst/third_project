@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT 프로젝트 계획서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        overflow: hidden; /* Prevent scrolling the main page */
+      }
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 4rem;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+        visibility: hidden;
+      }
+      .slide.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+      }
+      .section-title {
+        @apply text-4xl font-bold text-gray-800 mb-12;
+      }
+      .subsection-title {
+        @apply text-2xl font-semibold text-gray-700 mb-4;
+      }
+      .card {
+        @apply bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6 text-center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Slides Container -->
+    <main>
+      <!-- Slide 1: Title -->
+      <section
+        id="slide-1"
+        class="slide active"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2940&auto=format&fit=crop');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="bg-black bg-opacity-60 rounded-xl p-12 text-center text-white"
+        >
+          <h1 class="text-6xl font-bold mb-4">IT프로젝트 계획서 작성 가이드</h1>
+          <p class="text-2xl text-gray-200">
+            빅데이터 및 클라우드 기술을 활용한 IT프로젝트 계획서
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 2: 프로젝트 개요 -->
+      <section id="slide-2" class="slide bg-slate-50">
+        <h2 class="section-title">1. 프로젝트 개요</h2>
+        <div class="w-full max-w-5xl grid md:grid-cols-2 gap-8">
+          <div
+            class="bg-white rounded-xl shadow-2xl p-8 transform hover:scale-105 transition-transform"
+          >
+            <h3 class="subsection-title">프로젝트 목표</h3>
+            <p class="text-gray-600">
+              프로젝트의 최종 목표와 달성하고자 하는 구체적인 결과를 명확하게
+              정의합니다. 예를 들어, 새로운 서비스 출시, 비즈니스 프로세스 개선,
+              데이터 분석 시스템 구축 등을 명확히 제시합니다.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-2xl p-8 transform hover:scale-105 transition-transform"
+          >
+            <h3 class="subsection-title">프로젝트 배경</h3>
+            <p class="text-gray-600">
+              프로젝트의 필요성과 중요성을 설명합니다. 현황 분석, 시장 동향,
+              경쟁 현황, 사업 전략 등을 통해 프로젝트의 필요성을 설득력 있게
+              제시합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: 프로젝트 범위 정의 -->
+      <section id="slide-3" class="slide bg-slate-50">
+        <h2 class="section-title">2. 프로젝트 범위 정의</h2>
+        <div class="w-full max-w-6xl grid md:grid-cols-3 gap-8">
+          <div class="card">
+            <h3 class="subsection-title">프로젝트 대상</h3>
+            <p class="text-gray-600">
+              적용될 대상 시스템, 데이터, 사용자, 영역 등을 명확히 정의합니다.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="subsection-title">프로젝트 범위</h3>
+            <p class="text-gray-600">
+              개발, 구축, 운영, 유지보수 등 각 단계별 작업 범위를 구체적으로
+              명시합니다.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="subsection-title">프로젝트 제외 범위</h3>
+            <p class="text-gray-600">
+              제외되는 사항(특정 기능, 기술, 데이터 등)을 명확히 명시합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: 빅데이터 기술 활용 -->
+      <section id="slide-4" class="slide bg-slate-50">
+        <h2 class="section-title">3. 빅데이터 기술 활용 방안</h2>
+        <div class="w-full max-w-6xl grid md:grid-cols-3 gap-8 text-center">
+          <div class="card">
+            <svg
+              class="w-20 h-20 text-indigo-500 mx-auto mb-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+              ></path>
+            </svg>
+            <h3 class="subsection-title">데이터 수집 및 저장</h3>
+            <p class="text-gray-600">
+              다양한 출처의 데이터를 수집하고 적합한 데이터베이스에 저장합니다.
+            </p>
+          </div>
+          <div class="card">
+            <svg
+              class="w-20 h-20 text-indigo-500 mx-auto mb-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+            <h3 class="subsection-title">데이터 분석 및 활용</h3>
+            <p class="text-gray-600">
+              머신러닝, AI 기술로 데이터에서 의미있는 정보를 추출하고
+              활용합니다.
+            </p>
+          </div>
+          <div class="card">
+            <svg
+              class="w-20 h-20 text-indigo-500 mx-auto mb-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+              ></path>
+            </svg>
+            <h3 class="subsection-title">데이터 시각화</h3>
+            <p class="text-gray-600">
+              대시보드, 보고서를 통해 분석 결과를 효과적으로 전달합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: 클라우드 서비스 활용 -->
+      <section
+        id="slide-5"
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1518429338105-063993113531?q=80&w=2890&auto=format&fit=crop');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2 class="section-title text-white bg-black/50 px-4 py-2 rounded-lg">
+          4. 클라우드 서비스 활용 방안
+        </h2>
+        <div class="w-full max-w-6xl grid lg:grid-cols-3 gap-8">
+          <div class="card flex items-start space-x-4 text-left">
+            <div class="text-5xl font-extrabold text-indigo-500">1</div>
+            <div>
+              <h3 class="subsection-title text-xl">환경 구축</h3>
+              <p class="text-gray-600">
+                AWS, Azure, GCP 등 클라우드 서비스를 선택하여 인프라를
+                구축합니다.
+              </p>
+            </div>
+          </div>
+          <div class="card flex items-start space-x-4 text-left">
+            <div class="text-5xl font-extrabold text-indigo-500">2</div>
+            <div>
+              <h3 class="subsection-title text-xl">데이터 이전</h3>
+              <p class="text-gray-600">
+                기존 시스템이나 데이터를 클라우드로 이전하는 최적의 전략을
+                수립합니다.
+              </p>
+            </div>
+          </div>
+          <div class="card flex items-start space-x-4 text-left">
+            <div class="text-5xl font-extrabold text-indigo-500">3</div>
+            <div>
+              <h3 class="subsection-title text-xl">서비스 활용</h3>
+              <p class="text-gray-600">
+                클라우드 기반 DB, 스토리지, 컴퓨팅 리소스 등을 활용합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: 일정 및 예산 -->
+      <section id="slide-6" class="slide bg-slate-50">
+        <h2 class="section-title">5. 프로젝트 일정 및 예산 계획</h2>
+        <div class="w-full max-w-6xl grid md:grid-cols-2 gap-8 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop"
+            alt="Gantt Chart"
+            class="rounded-lg shadow-lg w-full h-full object-cover"
+          />
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="subsection-title">일정 계획</h3>
+              <p class="text-gray-600">
+                단계별 작업 일정, 소요 시간, 담당자를 상세하게 계획합니다.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="subsection-title">예산 계획 및 관리</h3>
+              <p class="text-gray-600">
+                개발, 인건비, 장비, 운영 비용 등 예산을 상세히 계획하고
+                지속적으로 관리합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: 위험 관리 -->
+      <section id="slide-7" class="slide bg-slate-50">
+        <h2 class="section-title">6. 프로젝트 위험 관리 방안</h2>
+        <div
+          class="w-full max-w-5xl flex justify-center items-center space-x-8"
+        >
+          <div class="space-y-8">
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+            >
+              <span class="text-3xl font-bold text-red-500">1</span>
+              <p>
+                <strong>위험 식별:</strong> 기술적, 사업적, 운영적 위험 등 발생
+                가능한 모든 위험을 식별하고 분류합니다.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+            >
+              <span class="text-3xl font-bold text-orange-500">2</span>
+              <p>
+                <strong>위험 분석:</strong> 식별된 위험의 발생 가능성과 영향도를
+                분석하고 피해 규모를 평가합니다.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4"
+            >
+              <span class="text-3xl font-bold text-yellow-500">3</span>
+              <p>
+                <strong>위험 대응 계획:</strong> 위험 회피, 완화, 전이, 수용 등
+                각 위험에 대한 구체적인 대응 방안을 수립합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: 기대효과 -->
+      <section
+        id="slide-8"
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2942&auto=format&fit=crop');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-12 text-center">
+          <h2 class="section-title">7. 기대효과 및 결론</h2>
+          <div class="w-full max-w-6xl grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-2xl font-semibold text-indigo-600 mb-2">
+                효율성 향상
+              </h3>
+              <p>
+                데이터 기반 의사 결정 및 자동화를 통해 업무 효율성을
+                극대화합니다.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-indigo-600 mb-2">
+                새로운 서비스 개발
+              </h3>
+              <p>
+                고객 맞춤형 서비스 개발로 새로운 수익을 창출하고 사업 경쟁력을
+                강화합니다.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-indigo-600 mb-2">
+                경쟁 우위 확보
+              </h3>
+              <p>
+                혁신적인 데이터 분석 역량과 서비스 제공을 통해 시장에서의 경쟁
+                우위를 확보합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Navigation Buttons -->
+    <div class="fixed bottom-4 right-4 z-20 flex space-x-2">
+      <button
+        id="prevBtn"
+        class="bg-indigo-600 text-white rounded-full p-3 shadow-lg hover:bg-indigo-700 transition"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </button>
+      <button
+        id="nextBtn"
+        class="bg-indigo-600 text-white rounded-full p-3 shadow-lg hover:bg-indigo-700 transition"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="fixed bottom-0 left-0 w-full h-1 bg-gray-300 z-20">
+      <div
+        id="progressBar"
+        class="h-full bg-indigo-600 transition-all duration-300"
+      ></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".slide");
+        const nextBtn = document.getElementById("nextBtn");
+        const prevBtn = document.getElementById("prevBtn");
+        const progressBar = document.getElementById("progressBar");
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+          });
+
+          if (slides[index]) {
+            slides[index].classList.add("active");
+          }
+          updateProgressBar();
+        }
+
+        function updateProgressBar() {
+          const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;
+          progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide(currentSlide);
+        }
+
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight" || e.key === " ") {
+            nextSlide();
+          } else if (e.key === "ArrowLeft") {
+            prevSlide();
+          }
+        });
+
+        showSlide(currentSlide);
+      });
+    </script>
+  </body>
+</html>
