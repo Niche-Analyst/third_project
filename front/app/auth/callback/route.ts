@@ -16,6 +16,7 @@ export async function GET(request: Request) {
     if (!authError && sessionResponse.session) {
       const { user, session } = sessionResponse;
 
+      // 1. [먼저 실행] profiles 테이블에 사용자 정보를 저장 (또는 업데이트)합니다.
       const { error: profileError } = await supabase.from('profiles').upsert({
         id: user.id,
         email: user.email!,
@@ -29,7 +30,7 @@ export async function GET(request: Request) {
         );
       }
 
- 
+      // 2. [나중에 실행] user_tokens 테이블에 토큰 정보를 저장합니다.
       const secretKey = process.env.CRYPTO_SECRET_KEY;
       if (!secretKey) {
         console.error('🚨 [Error] CRYPTO_SECRET_KEY is not set in .env.local');
@@ -46,12 +47,17 @@ export async function GET(request: Request) {
         secretKey
       ).toString();
 
-      const { error: tokenError } = await supabase.from('user_tokens').upsert({
-        user_id: user.id,
-        access_token: encryptedAccessToken,
-        refresh_token: encryptedRefreshToken,
-        expires_at: new Date(session.expires_at! * 1000).toISOString(),
-      });
+      const { error: tokenError } = await supabase
+        .from('user_tokens')
+        .upsert(
+          {
+            user_id: user.id,
+            access_token: encryptedAccessToken,
+            refresh_token: encryptedRefreshToken,
+            expires_at: new Date(session.expires_at! * 1000).toISOString(),
+          },
+          { onConflict: 'user_id' } // onConflict 옵션 추가
+        );
 
       if (tokenError) {
         console.error('🚨 Token Upsert Error:', tokenError.message);
