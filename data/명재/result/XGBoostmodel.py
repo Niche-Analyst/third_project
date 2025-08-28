@@ -66,23 +66,6 @@ else:
     model_sales.fit(X_train, y_sales_train)
 
     # -------------------------------
-    # 4. 그래프 1: 노출 시간 대 ROI 관계 (산점도)
-    # -------------------------------
-    plt.figure(figsize=(10, 6))
-    plt.scatter(
-        df_selected_industry['total_exposure_seconds'],
-        df_selected_industry['roi_percent'],
-        alpha=0.6, s=50, c='b'
-    )
-    plt.title(f'[{selected_industry}] 총 노출 시간(초) 대 ROI(%) 관계', fontsize=15)
-    plt.xlabel('총 노출 시간 (초)', fontsize=12)
-    plt.ylabel('ROI (%)', fontsize=12)
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.tight_layout()
-    plt.show()
-    plt.close()
-
-    # -------------------------------
     # 5. 그래프 2: 노출 시간에 따른 매출 증가 예측 시뮬레이션
     # -------------------------------
     exposure_range = np.linspace(
@@ -111,7 +94,12 @@ else:
     plt.legend()
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
+    # ✅ 그래프를 PNG 파일로 저장
+    output_dir = "graphs"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"{clean_industry_name}_sales_prediction.png")
+    plt.savefig(output_path, dpi=300)  # 고해상도 저장
+    print(f"그래프가 저장되었습니다 → {output_path}")
+
     plt.show()
     plt.close()
-
-    print(f"'{selected_industry}' 산업에 대한 두 그래프가 성공적으로 생성되었습니다. (모델: XGBoost)")
