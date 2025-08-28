@@ -34,5 +34,5 @@ SELECT
 FROM ranked r
 JOIN industry_avg ia ON r.industry = ia.industry
 WHERE r.roi_rank <= 3   -- 상위 N개 (여기서는 3개)
--- AND r.industry = "부동산"
+-- AND r.industry = "부동산" 선택한 industry 값
 ORDER BY r.industry, r.roi_rank;
