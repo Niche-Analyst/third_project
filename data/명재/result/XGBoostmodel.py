@@ -5,12 +5,31 @@ import matplotlib.font_manager as fm
 from sklearn.model_selection import train_test_split
 from xgboost import XGBRegressor  # ✅ XGBoost 추가
 import os
+import pymysql
+from sqlalchemy import create_engine
 
 # -------------------------------
 # Matplotlib 한글 폰트 설정
 # -------------------------------
 plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False 
+
+# -------------------------------
+# DB 연결 설정 (RDS)
+# -------------------------------
+DB_CONFIG = {
+    "user": "admin1",
+    "password": "yosep1234",
+    "host": "ppl-databse.c3mgm880ipe5.ap-northeast-2.rds.amazonaws.com",
+    "port": 3306,
+    "database": "PPL_Service"
+}
+
+# SQLAlchemy 엔진 생성
+engine = create_engine(
+    f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}@"
+    f"{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}?charset=utf8mb4"
+)
 
 # -------------------------------
 # 1. 프론트엔드에서 선택된 산업 정보 받기
@@ -21,10 +40,13 @@ clean_industry_name = selected_industry.replace('/', '_').replace(' ', '_')
 # -------------------------------
 # 2. 데이터 불러오기 및 필터링
 # -------------------------------
-file_path = "PPL_Marketing_ROI_Analysis_English.xlsx"
-df = pd.read_excel(file_path)
+query = f"""
+SELECT * 
+FROM ppl_dummy_data   -- ✅ 실제 테이블명으로 교체 필요
+WHERE industry = '{selected_industry}';
+"""
 
-df_selected_industry = df[df['industry'] == selected_industry].copy()
+df_selected_industry = pd.read_sql(query, engine)
 
 if len(df_selected_industry) < 20:
     print(f"오류: '{selected_industry}' 산업에 대한 데이터가 부족하여 분석을 진행할 수 없습니다.")

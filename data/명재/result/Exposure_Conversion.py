@@ -12,13 +12,12 @@ plt.rcParams['axes.unicode_minus'] = False
 # 1. DB 연결 설정
 # -------------------------------
 DB_CONFIG = {
-    "user": "lguplus6",
-    "password": "lg6p@ssw0rd~!",
-    "host": "localhost",
+    "user": "admin1",
+    "password": "yosep1234",
+    "host": "ppl-databse.c3mgm880ipe5.ap-northeast-2.rds.amazonaws.com",
     "port": 3306,
-    "database": "tv_data"
+    "database": "PPL_Service"
 }
-
 # -------------------------------
 # 2. 실행할 SQL 쿼리
 # -------------------------------
